@@ -11,7 +11,7 @@ function Dashboard() {
 
   useEffect(() => {
     loadDashboardData();
-  }, [selectedDate]);
+  }, [loadDashboardData]);
 
   const loadDashboardData = async () => {
     setLoading(true);

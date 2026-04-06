@@ -145,39 +145,6 @@ vercel --prod
 # - Environment Variable: REACT_APP_API_URL
 # - Value: [Web App URL]
 ```
-
----
-
-### المرحلة 3️⃣: الاختبار والتشغيل
-
-#### 1. إضافة طلاب تجريبيين
-
-انتقل إلى Google Sheet مباشرة وأضف في sheet "Students":
-
-```
-student_id | qr_code | full_name | grade | class_section | guardian_name | guardian_phone | enrollment_date | status | notes
-STD-001 | STD-001 | أحمد محمد | الصف الثالث | أ | محمد علي | 01012345678 | 2026-04-05 | active | 
-STD-002 | STD-002 | سارة أحمد | الصف الثالث | ب | أحمد حسن | 01098765432 | 2026-04-05 | active |
-```
-
-#### 2. إنشاء QR Codes
-
-1. افتح التطبيق على Vercel
-2. اذهب إلى صفحة "الطلاب"
-3. اضغط "إنشاء رموز QR"
-4. سيتم تحميل ملف HTML
-5. افتحه في المتصفح واطبع الصفحات
-
-#### 3. اختبار المسح
-
-1. افتح صفحة "المسح"
-2. أدخل اسم المدرس
-3. ابدأ المسح
-4. وجه الكاميرا نحو QR code
-5. تحقق من التسجيل في Dashboard
-
----
-
 ## 📁 هيكل المشروع
 
 ```
@@ -257,34 +224,10 @@ attendance-system/
 
 ---
 
-## 🐛 استكشاف الأخطاء
-
-### المشكلة: لا يعمل المسح
-
-**الحل:**
-1. تأكد من السماح للموقع بالوصول للكاميرا
-2. استخدم HTTPS (Vercel يوفرها تلقائياً)
-3. جرب متصفح آخر (Chrome مفضل)
-
-### المشكلة: خطأ في الاتصال بـ API
-
-**الحل:**
-1. تأكد من نسخ Web App URL بشكل صحيح
-2. تحقق من أن الـ deployment تم بصلاحية "Anyone"
-3. تأكد من إضافة المتغير في Vercel Environment Variables
-
-### المشكلة: لا تظهر البيانات
-
-**الحل:**
-1. افتح Console في المتصفح (F12)
-2. تحقق من وجود أخطاء في Network tab
-3. تأكد من تشغيل `setupSpreadsheet` في Apps Script
-
----
-
 ## 📱 معلومات الاتصال
 
 **Developer:** Abdelkareem  
+**mobile:** 01090075321
 **Company:** X Digital Transformation  
 **Location:** Cairo, Egypt  
 **Tech Stack:** Full-Stack JavaScript (React, Node.js, Google Apps Script)
@@ -317,6 +260,3 @@ attendance-system/
 4. ✅ راقب التقارير يومياً
 5. ✅ اضبط الإعدادات حسب احتياجات مدرستك
 
----
-
-**جاهز للانطلاق! 🎯**
